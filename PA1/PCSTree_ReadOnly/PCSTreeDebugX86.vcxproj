@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{ED602E5D-031C-4AF8-B6A6-4B34E0073B27}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Basics1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>CppCoreCheckConstRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;BOILER;_CONSOLE;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";SOLUTION_DIR=R"($(SolutionDir))";TOOLS_VERSION=R"($(VCToolsVersion))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Framework;$(SolutionDir)Test;$(SolutionDir)PCSTree</AdditionalIncludeDirectories>
+      <WarningVersion>
+      </WarningVersion>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PrecompiledHeaderOutputFile />
+      <ForcedIncludeFiles>Framework.h</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <EnablePREfast>false</EnablePREfast>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Framework\Framework.h" />
+    <ClInclude Include="..\PCSTree\PCSNode.h" />
+    <ClInclude Include="..\PCSTree\PCSTree.h" />
+    <ClInclude Include="..\PCSTree\_UnitTestConfiguration.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Framework\__DO NOT MODIFY__" />
+    <None Include="..\Test\__DO NOT MODIFY__" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\PCSTree\PCSNode.cpp" />
+    <ClCompile Include="..\PCSTree\PCSTree.cpp" />
+    <ClCompile Include="..\Test\AddNodeRootABCDEIKLRFGJMNOPQHSTUVW_Check.cpp" />
+    <ClCompile Include="..\Test\AddNodeRootABCDEIKLRFGJMNOPQHS_Check.cpp" />
+    <ClCompile Include="..\Test\AddNodeRootABCDEIKLRFGJMNOPQH_Check.cpp" />
+    <ClCompile Include="..\Test\AddNodeRootABCDEIKLRFGJMNOPQ_Check.cpp" />
+    <ClCompile Include="..\Test\AddNodeRootABCDEIKLRFGJMN_Check.cpp" />
+    <ClCompile Include="..\Test\AddNodeRootABCDEIKLRFGJ_Check.cpp" />
+    <ClCompile Include="..\Test\AddNodeRootABCDEIKLRF_Check.cpp" />
+    <ClCompile Include="..\Test\AddNodeRootABCDEIKLR_Check.cpp" />
+    <ClCompile Include="..\Test\AddNodeRootABCDEIKL_Check.cpp" />
+    <ClCompile Include="..\Test\AddNodeRootABCDEI_Check.cpp" />
+    <ClCompile Include="..\Test\AddNodeRootABC_Check.cpp" />
+    <ClCompile Include="..\Test\AddNodeRootAB_Check.cpp" />
+    <ClCompile Include="..\Test\AddNodeRootADFH_Check.cpp" />
+    <ClCompile Include="..\Test\AddNodeRootADF_Check.cpp" />
+    <ClCompile Include="..\Test\AddNodeRootAD_Check.cpp" />
+    <ClCompile Include="..\Test\AddNodeRootA_Check.cpp" />
+    <ClCompile Include="..\Test\AddNodeRoot_Check.cpp" />
+    <ClCompile Include="..\Test\AssignOperator_Check.cpp" />
+    <ClCompile Include="..\Test\CopyConstructor2_Check.cpp" />
+    <ClCompile Include="..\Test\CopyConstructor3_Check.cpp" />
+    <ClCompile Include="..\Test\CopyConstructor_Check.cpp" />
+    <ClCompile Include="..\Test\DefaultConstructor_Check.cpp" />
+    <ClCompile Include="..\Test\Destructor_Check.cpp" />
+    <ClCompile Include="..\Test\FullTreeGetNumChildren_Check.cpp" />
+    <ClCompile Include="..\Test\FullTreeGetNumSiblings_Check.cpp" />
+    <ClCompile Include="..\Test\FullTreePrintChildren_Check.cpp" />
+    <ClCompile Include="..\Test\FullTreePrintSiblings_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_CheckLevels_C_children_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_CheckLevels_C_Children_Remove_OPQ_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_CheckLevels_C_children_Remove_C_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_CheckLevels_C_Children_Remove_Root_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_CheckLevels_C_Children_Remove_R_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_CheckLevels_C_children_remove_S_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_CheckLevels_C_children_remove_TUVW_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_PrintTree_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveA_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveB_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveC_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveD_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveE_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveF_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveG_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveH_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveI_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveJ_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveK_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveL_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveM_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveN_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveO_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveP_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveQ_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveRoot_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveR_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveS_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveT_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveU_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveV_Check.cpp" />
+    <ClCompile Include="..\Test\FullTree_RemoveW_Check.cpp" />
+    <ClCompile Include="..\Test\GetChild_Check.cpp" />
+    <ClCompile Include="..\Test\GetNameNormalNull_Check.cpp" />
+    <ClCompile Include="..\Test\GetNameNormal_Check.cpp" />
+    <ClCompile Include="..\Test\GetNameTooBig_Check.cpp" />
+    <ClCompile Include="..\Test\GetNameTooSmall_Check.cpp" />
+    <ClCompile Include="..\Test\GetNextSibling_Check.cpp" />
+    <ClCompile Include="..\Test\GetParent_Check.cpp" />
+    <ClCompile Include="..\Test\GetPrevSibling_Check.cpp" />
+    <ClCompile Include="..\Test\PrintNodeWith0Links_Check.cpp" />
+    <ClCompile Include="..\Test\Print_Check.cpp" />
+    <ClCompile Include="..\Test\SetChild_Check.cpp" />
+    <ClCompile Include="..\Test\SetNameNormalNull_Check.cpp" />
+    <ClCompile Include="..\Test\SetNameNormal_Check.cpp" />
+    <ClCompile Include="..\Test\SetNameTooBig_Check.cpp" />
+    <ClCompile Include="..\Test\SetNextSibling_Check.cpp" />
+    <ClCompile Include="..\Test\SetParent_Check.cpp" />
+    <ClCompile Include="..\Test\SetPrevSibling_Check.cpp" />
+    <ClCompile Include="..\Test\SpecializeConstructorName_Check.cpp" />
+    <ClCompile Include="..\Test\SpecializeConstructor_Check.cpp" />
+    <ClCompile Include="..\Test\TreeConstructor_Check.cpp" />
+    <ClCompile Include="..\Test\Version_Check.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

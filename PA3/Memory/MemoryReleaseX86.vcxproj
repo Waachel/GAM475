@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{ED602E5D-031C-4AF8-B6A6-4B34E0073B27}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Basics1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;BOILER;_CONSOLE;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";SOLUTION_DIR=R"($(SolutionDir))";TOOLS_VERSION=R"($(VCToolsVersion))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Framework;$(SolutionDir)Test;$(SolutionDir)Memory</AdditionalIncludeDirectories>
+      <WarningVersion>
+      </WarningVersion>
+      <PrecompiledHeaderOutputFile />
+      <ForcedIncludeFiles>Framework.h</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Test\Add4Allocs_RemoveAll_TrackingThroughHeap.cpp" />
+    <ClCompile Include="..\Test\Add4Allocs_RemoveAll_TrackingThroughHeap_Global.cpp" />
+    <ClCompile Include="..\Test\Add4Allocs_RemoveFirst_TrackingThroughHeap.cpp" />
+    <ClCompile Include="..\Test\Add4Allocs_RemoveFirst_TrackingThroughHeap_Global.cpp" />
+    <ClCompile Include="..\Test\Add4Allocs_RemoveLast_TrackingThroughHeap.cpp" />
+    <ClCompile Include="..\Test\Add4Allocs_RemoveLast_TrackingThroughHeap_Global.cpp" />
+    <ClCompile Include="..\Test\Add4Allocs_RemoveMiddle_TrackingThroughHeap.cpp" />
+    <ClCompile Include="..\Test\Add4Allocs_RemoveMiddle_TrackingThroughHeap_Global.cpp" />
+    <ClCompile Include="..\Test\Add4Heaps.cpp" />
+    <ClCompile Include="..\Test\Add4Heaps_RemoveAllHeaps.cpp" />
+    <ClCompile Include="..\Test\Add4Heaps_RemoveFirstHeap.cpp" />
+    <ClCompile Include="..\Test\Add4Heaps_RemoveLastHeap.cpp" />
+    <ClCompile Include="..\Test\Add4Heaps_RemoveMiddleHeap.cpp" />
+    <ClCompile Include="..\Test\Add5Allocs_TrackingThroughHeap.cpp" />
+    <ClCompile Include="..\Test\Add5Allocs_TrackingThroughHeap_Global.cpp" />
+    <ClCompile Include="..\Test\AddOneHeap.cpp" />
+    <ClCompile Include="..\Test\AlignCheck.cpp" />
+    <ClCompile Include="..\Test\AlignCheck2.cpp" />
+    <ClCompile Include="..\Test\align_128byte_test.cpp" />
+    <ClCompile Include="..\Test\align_16byte_test.cpp" />
+    <ClCompile Include="..\Test\align_256byte_test.cpp" />
+    <ClCompile Include="..\Test\align_32byte_test.cpp" />
+    <ClCompile Include="..\Test\align_4byte_test.cpp" />
+    <ClCompile Include="..\Test\align_64byte_test.cpp" />
+    <ClCompile Include="..\Test\align_8byte_test.cpp" />
+    <ClCompile Include="..\Test\allocate_5_from_heap.cpp" />
+    <ClCompile Include="..\Test\allocate_from_heap.cpp" />
+    <ClCompile Include="..\Test\allocate_from_heapARRAY.cpp" />
+    <ClCompile Include="..\Test\allocate_from_heapARRAY2.cpp" />
+    <ClCompile Include="..\Test\allocate_from_heapARRAY3.cpp" />
+    <ClCompile Include="..\Test\Fixed2_Tracking.cpp" />
+    <ClCompile Include="..\Test\Fixed_Check1.cpp" />
+    <ClCompile Include="..\Test\Fixed_Check2.cpp" />
+    <ClCompile Include="..\Test\Fixed_overflow.cpp" />
+    <ClCompile Include="..\Test\Fixed_overflow2.cpp" />
+    <ClCompile Include="..\Test\Fixed_Tracking.cpp" />
+    <ClCompile Include="..\Test\HeapcCheck.cpp" />
+    <ClCompile Include="..\Test\HeapcCheck2.cpp" />
+    <ClCompile Include="..\Test\HeapcCheck3.cpp" />
+    <ClCompile Include="..\Test\Initialize_GetHeapByAddr_badPtr.cpp" />
+    <ClCompile Include="..\Test\Initialize_HeapCreate.cpp" />
+    <ClCompile Include="..\Test\Initialize_Heap_Destroy.cpp" />
+    <ClCompile Include="..\Test\Initialize_MemorySystem.cpp" />
+    <ClCompile Include="..\Test\Initialize_NullHeap_Destroy.cpp" />
+    <ClCompile Include="..\Test\Initialize_WrongHeap_Destroy.cpp" />
+    <ClCompile Include="..\Test\No_Initialize_Destroy.cpp" />
+    <ClCompile Include="..\Test\No_Initialize_GetHeapByAddr.cpp" />
+    <ClCompile Include="..\Test\No_Initialize_HeapCreate.cpp" />
+    <ClCompile Include="..\Test\No_Initialize_Heap_Destroy.cpp" />
+    <ClCompile Include="..\Test\No_Initialize_MemorySystem.cpp" />
+    <ClCompile Include="..\Test\No_Initialize_NullHeap_Destroy.cpp" />
+    <ClCompile Include="..\Test\TrackCheck.cpp" />
+    <ClCompile Include="..\Test\TrackCheck2.cpp" />
+    <ClCompile Include="..\Test\TrackCheck3.cpp" />
+    <ClCompile Include="..\Test\TrackCheck4.cpp" />
+    <ClCompile Include="..\Test\Version_Verify.cpp" />
+    <ClCompile Include="Block.cpp" />
+    <ClCompile Include="DLink.cpp" />
+    <ClCompile Include="Dog.cpp" />
+    <ClCompile Include="GlobalNew.cpp" />
+    <ClCompile Include="Heap.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mem.cpp" />
+    <ClCompile Include="Registration.cpp" />
+    <ClInclude Include="..\Framework\Framework.h" />
+    <ClInclude Include="Block.h" />
+    <ClInclude Include="DLink.h" />
+    <ClInclude Include="Dog.h" />
+    <ClInclude Include="GlobalNew.h" />
+    <ClInclude Include="Heap.h" />
+    <ClInclude Include="Mem.h" />
+    <ClInclude Include="MemEngine.h" />
+    <ClInclude Include="Registration.h" />
+    <ClInclude Include="_UnitTestConfiguration.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Framework\__DO NOT MODIFY__" />
+    <None Include="..\Test\__DO NOT MODIFY__" />
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

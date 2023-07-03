@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Test\0_CompilerVersion.cpp">
+      <Filter>_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source\_Do_NOT_Modify_</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Framework\Framework.h">
+      <Filter>_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="_UnitTestConfiguration.h">
+      <Filter>Source\_Do_NOT_Modify_</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="_Tests">
+      <UniqueIdentifier>{9b237f2e-0b7d-487f-8a59-b3a0e2484072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{9d99807e-a218-4924-b4f4-fb90bc0a62c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Framework">
+      <UniqueIdentifier>{1b67ae89-9483-4cb4-b6b3-bd563158f152}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\_Do_NOT_Modify_">
+      <UniqueIdentifier>{1eaf0b99-b564-4798-9767-a65468cbc404}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="_Framework">
+      <UniqueIdentifier>{0b776af2-bfcb-4635-9387-79853b59c5c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs">
+      <UniqueIdentifier>{d070f632-a0e4-474c-b128-e5bb87e185cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW">
+      <UniqueIdentifier>{6850435d-5aa4-4265-a0df-8a437a8c611f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB7">
+      <UniqueIdentifier>{98ceaf53-6612-4a0d-a4b7-d1aff56b73f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB7\libs">
+      <UniqueIdentifier>{fb4ab8fc-2bf6-49b0-be95-9b025ed68ee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB7\include">
+      <UniqueIdentifier>{0582b974-007b-41b6-9713-de111e669b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB7\include\GL">
+      <UniqueIdentifier>{4eb24570-7e69-4fa1-8c14-a8bf4f939c21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW\libs">
+      <UniqueIdentifier>{ae598e99-bbb5-4f0f-a363-c1ad2696e0fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW\include">
+      <UniqueIdentifier>{6e37027e-6f03-429f-84e5-c3e9f66f6389}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW\include\GLFW">
+      <UniqueIdentifier>{39dbaeed-fa92-48b2-b85f-04a98c4173cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Framework\__DO NOT MODIFY__">
+      <Filter>_Framework</Filter>
+    </None>
+    <None Include="..\dist\GLFW\lib\GLFW_X86Debug.pdb">
+      <Filter>_Libs\GLFW\libs</Filter>
+    </None>
+    <None Include="..\dist\GLFW\lib\GLFW_X86Release.pdb">
+      <Filter>_Libs\GLFW\libs</Filter>
+    </None>
+    <None Include="..\dist\SB7\lib\SB7_X86Debug.pdb">
+      <Filter>_Libs\SB7\libs</Filter>
+    </None>
+    <None Include="..\dist\SB7\lib\SB7_X86Release.pdb">
+      <Filter>_Libs\SB7\libs</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dist\GLFW\include\GLFW\glfw3.h">
+      <Filter>_Libs\GLFW\include\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\GLFW\include\GLFW\glfw3native.h">
+      <Filter>_Libs\GLFW\include\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB7\include\object.h">
+      <Filter>_Libs\SB7\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB7\include\sb6mfile.h">
+      <Filter>_Libs\SB7\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB7\include\sb7.h">
+      <Filter>_Libs\SB7\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB7\include\sb7color.h">
+      <Filter>_Libs\SB7\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB7\include\sb7ext.h">
+      <Filter>_Libs\SB7\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB7\include\sb7ktx.h">
+      <Filter>_Libs\SB7\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB7\include\sb7textoverlay.h">
+      <Filter>_Libs\SB7\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB7\include\shader.h">
+      <Filter>_Libs\SB7\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB7\include\vmath.h">
+      <Filter>_Libs\SB7\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB7\include\GL\gl3w.h">
+      <Filter>_Libs\SB7\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB7\include\GL\glcorearb.h">
+      <Filter>_Libs\SB7\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB7\include\GL\glext.h">
+      <Filter>_Libs\SB7\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB7\include\GL\glxext.h">
+      <Filter>_Libs\SB7\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB7\include\GL\wglext.h">
+      <Filter>_Libs\SB7\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Framework.h">
+      <Filter>_Framework</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\GLFW\lib\GLFW_X86Debug.lib">
+      <Filter>_Libs\GLFW\libs</Filter>
+    </Library>
+    <Library Include="..\dist\GLFW\lib\GLFW_X86Release.lib">
+      <Filter>_Libs\GLFW\libs</Filter>
+    </Library>
+    <Library Include="..\dist\SB7\lib\SB7_X86Debug.lib">
+      <Filter>_Libs\SB7\libs</Filter>
+    </Library>
+    <Library Include="..\dist\SB7\lib\SB7_X86Release.lib">
+      <Filter>_Libs\SB7\libs</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spinnycube.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
