@@ -53,10 +53,14 @@ The final project includes
 * Open MS2
 * Run Engine.sln
 * The following scene is rendered:
-  * Camera 1:
-  * Camera 2:
-  * Camera 3:
-  * Camera 4: 
+  * Camera 1: <br>
+    ![image](https://github.com/Waachel/GAM475/assets/12739252/5b65bfac-6c96-42a4-ac41-a2d1aaedb9b4)
+  * Camera 2: <br>
+    ![image](https://github.com/Waachel/GAM475/assets/12739252/3dbdf116-b006-4e4d-a417-68e749de7986)
+  * Camera 3: <br>
+    ![image](https://github.com/Waachel/GAM475/assets/12739252/b2c0ada7-4944-4f98-810f-a19ffc72ce66)
+  * Camera 4: <br>
+    ![image](https://github.com/Waachel/GAM475/assets/12739252/33118f12-4522-4b10-a69c-dd8589bb0af3)
 * Use 1, 2, 3, 4 to cycle through the cameras
 * Use S, W, E, D to adjust the view
 * Use I and O to zoom in and out
