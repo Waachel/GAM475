@@ -57,3 +57,21 @@ The final project includes
     * Different types of lighting
     * Different lighting parameters (color, direction, etc)
 
+## Instructions To View the Final Project
+* Open MS2
+* Run Engine.sln
+* The following scene is rendered:
+  * Camera 1:
+  * Camera 2:
+  * Camera 3:
+  * Camera 4: 
+* Use 1, 2, 3, 4 to cycle through the cameras
+* Use S, W, E, D to adjust the view
+* Use I and O to zoom in and out
+* Use the keyboard arrow keys to look around
+* Special Notes:
+  * Five Shapes - Cube, Sphere, Pyramid, Diamond, and Cross - WireFrame and Solid
+  * Four Shaders - Solid Colors, Blended Colors, and Various Lighting
+  * Four Textures - Rocks, Bricks, Duckweed, and Stone
+
+* Click here to view a [full walkthrough](https://youtu.be/3o6tAZnavw8) of my final project
