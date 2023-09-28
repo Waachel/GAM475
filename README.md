@@ -1,14 +1,6 @@
 # GAM475 - Real-Time Software Development
 ## Description
-For GAM475, I learned about runtime library construction, abstracting low-level systems, custom data containers, memory tracking, framework development, realt-time design patterns, low-level drivers, and graphic engine development.  real-time constrained multithreaded architecture. Topics covered include multithreaded handle development, inter-thread communication, creating systems for user-defined callbacks, asynchronous loading and streaming of resources, non-blocking threading synchronization, design patterns and data driven messaging with time delivery constraints. For the final project, I created an Audio Engine that integrated the existing single and multithreaded middleware libraries.
-
-Topics include runtime library construction, abstracting low-level
-systems, custom data containers, memory tracking, framework development, real-time design patterns,
-low-level drivers, graphics engine development. Design and implementation of multi-heap memory
-management system with aligned allocations with cross heap tracking. Exploration of real-time data
-driven messaging to allowing the run-time object data to control the behavior an application. Interface
-development to create a responsive optimized access to abstract data types. Students will design,
-develop and implement a real-time application (i.e. Graphics engine) that integrates multiple userdeveloped libraries with real-time constraints.
+For GAM475, I learned about runtime library construction, abstracting low-level systems, custom data containers, memory tracking, framework development, realt-time design patterns, low-level drivers, and graphic engine development.
 
 ## Final Project Description: Graphics Engine
 The final project includes 
